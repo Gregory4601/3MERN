@@ -1,0 +1,27 @@
+### CREATE A MISSION ###
+POST http://localhost:5000/missions
+Content-Type: application/json
+
+{
+  "country": "Country",
+  "start_date": "01/01/2001",
+  "end_date": "01/01/2002",
+  "rovers": "Rover"
+}
+
+### READ ALL MISSIONS ###
+GET http://localhost:5000/missions
+
+### UPDATE A MISSION ###
+PUT http://localhost:5000/missions/624c5f829ca6de5f7a2da683
+Content-Type: application/json
+
+{
+  "country": "Update Country",
+  "start_date": "01/01/2001",
+  "end_date": "01/01/2002",
+  "rovers": "Update Rover"
+}
+
+### DELETE A MISSION ###
+DELETE http://localhost:5000/missions/62483fb85e55c0e99afd14e5

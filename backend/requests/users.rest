@@ -1,0 +1,27 @@
+### CREATE A USER ###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "email": "c",
+  "pseudo": "c",
+  "password": "c",
+  "isAdmin": false
+}
+
+### READ ALL USERS ###
+GET http://localhost:5000/users
+
+### UPDATE A USER ###
+PUT http://localhost:5000/users/624d3c3e2e85b6c55da91eae
+Content-Type: application/json
+
+{
+  "email": "a@a.a",
+  "pseudo": "a",
+  "password": "a",
+  "isAdmin": true
+}
+
+### DELETE A USER ###
+DELETE http://localhost:5000/users/624704af8994e16a17f5cbf3

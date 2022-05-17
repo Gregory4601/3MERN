@@ -1,0 +1,29 @@
+### CREATE A ROVER ###
+POST http://localhost:5000/rovers
+Content-Type: application/json
+
+{
+  "name": "Rover 1",
+  "launch_date": "01/01/2001",
+  "construction_date": "01/01/2000",
+  "rover_constructor": "Mr Bean",
+  "image": "image.png"
+}
+
+### READ ALL ROVERS ###
+GET http://localhost:5000/rovers
+
+### UPDATE A ROVER ###
+PUT http://localhost:5000/rovers/62483a5f5e55c0e99afd14df
+Content-Type: application/json
+
+{
+  "name": "Update Name",
+  "launch_date": "01/01/2001",
+  "construction_date": "01/01/2000",
+  "rover_constructor": "Update Constructor",
+  "image": "update.png"
+}
+
+### DELETE A ROVER ###
+DELETE http://localhost:5000/rovers/624c5e759ca6de5f7a2da671
